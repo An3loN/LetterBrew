@@ -1,0 +1,45 @@
+:root {
+    --windowBackground: #1E1E1E;
+    --windowInput: #393737;
+}
+.room-main_container {
+    min-width: 90vw;
+    min-height: 90vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.room-interact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    flex-basis: 500px;
+    min-height: 50vh;
+}
+.game {
+    flex-basis: 700px;
+    min-height: 25vh;
+}
+.room-code_container {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: var(--windowBackground);
+    border-radius: 15px;
+    padding: 15px 10px;
+    box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.10);
+}
+.room-code {
+    color: var(--lightColor);
+    font-size: 2em;
+    margin: 0;
+}
+@media screen and (max-width: 1280px) and (min-height: 1280px) {
+    .game {
+        flex-basis: 500px;
+    }
+}

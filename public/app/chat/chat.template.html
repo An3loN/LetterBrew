@@ -1,0 +1,4 @@
+<form class="chat-input_form" ng-submit="$ctrl.submit()"><input class="chat-input" ng-model="$ctrl.inputMsg"></form>
+<div class="chat-msg_container" ng-repeat="msg in $ctrl.msgs | reverse">
+    <p class="chat-msg"><span class="chat-msg_name">{{msg.player}}:</span>{{msg.text}}</p>
+</div>

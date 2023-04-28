@@ -1,0 +1,83 @@
+:root {
+    --field-label: gray;
+    --login-button: #723D46;
+    --login-button_highlighted: #7d4851;
+    --login-button_text_disabled: #afa38d;
+    --login-button_disabled: #4a3437;
+    --login-log: #938872;
+}
+.login-btn {
+    font-size: 3.5em;
+    margin-top: 25px;
+    width: 70%;
+    transition: box-shadow 0.2s, color 0.2s, background-color 0.4s;
+    box-shadow: 0px 0px 14px 6px rgba(var(--lightColorRgb),0.25);
+    color: var(--glowTextColor);
+    background-color: var(--login-button);
+}
+.login-btn:hover {
+    box-shadow: 0px 0px 14px 6px rgba(var(--lightColorRgb),0.45);
+    background-color: var(--login-button_highlighted);
+}
+.login-btn:disabled {
+    box-shadow: 0px 0px 14px 6px rgba(var(--lightColorRgb),0);
+    color: var(----login-button_text_disabled);
+    background-color: var(--login-button_disabled);
+}
+.login-input {
+    box-sizing: border-box;
+    font-size: 2.75em;
+    padding: 0.25em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    box-shadow: 0px 7px 14px 6px rgba(0, 0, 0, 0.25);
+    background-color: var(--chatBoxColor);
+    color: var(--lightColor);
+    transition: border 0.2ms;
+}
+.login-input:invalid {
+    border-width: 2px;
+    border-color: var(--lightColor);
+}
+.login-message_log {
+    text-align: center;
+    font-size: 2em;
+    margin:0;
+    color: var(--login-log);
+    padding: 1px;
+}
+.login-message_log:empty::before {
+	content: "\a0";
+}
+.login-form {
+    width: 100%;
+}
+.login-input_label {
+    text-align: center;
+    color: var(--field-label);
+    font-size: 2em;
+    margin: 0;
+}
+.login-main_containter {
+    min-height: 400px;
+    min-width: 200px;
+    max-width: 95vw;
+    max-height: calc(140vw);
+    height: 90vh;
+    font-size: 1cqh;
+    width: calc(90vh/3*2);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.login {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+}

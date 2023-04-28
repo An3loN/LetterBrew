@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="brewApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="app/shared.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/app.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/login/login.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/card/card.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/room/room.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/lobbyInfo/lobbyInfo.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/chat/chat.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="app/game/game.css" media="screen" />
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/app.config.js"></script>
+        <script src="app/login/login.service.js"></script>
+        <script src="app/login/login.component.js"></script>
+        <script src="app/login/loginView.component.js"></script>
+        <script src="app/card/card.component.js"></script>
+        <script src="app/room/roomSocket.provider.js"></script>
+        <script src="app/room/room.service.js"></script>
+        <script src="app/lobbyInfo/lobbyInfo.component.js"></script>
+        <script src="app/lobbyInfo/lobbyInfo.service.js"></script>
+        <script src="app/chat/chat.component.js"></script>
+        <script src="app/chat/chat.service.js"></script>
+        <script src="app/game/game.component.js"></script>
+        <script src="app/game/game.service.js"></script>
+        <script src="app/roomCode/roomCode.component.js"></script>
+    </head>
+    <body>
+        <div ng-view></div>
+    </body>
+</html>

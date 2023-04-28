@@ -1,0 +1,13 @@
+:root {
+    --bgColor: #2E2324;
+    --lightCardColor: #723D46;
+    --shadowCardColor: #231A1B;
+    --lightCardTextColor: #C9CBA3;
+    --glowTextColor: #FFE1A8;
+    --lightColor: #FFE1A8;
+    --lightColorRgb: 122, 89, 89;
+    --chatBoxColor: #1E1E1E;
+    --chatBoxTextColor: #FFFFFF;
+    --chatInputColor: #393737;
+    --chatInputTextColor: #FFFFFF;
+}

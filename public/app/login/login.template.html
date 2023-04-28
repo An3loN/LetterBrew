@@ -1,0 +1,8 @@
+<form name="loginForm" class="login-form" novalidate>
+    <p class="login-input_label">Имя</p>
+    <input class="input login-input" ng-model="$ctrl.nickname" placeholder="ПРЕДСТАВЬСЯ" ng-pattern="$" required></p>
+    <p class="login-input_label">Код комнаты</p>
+    <input class="input login-input" ng-model="$ctrl.room" placeholder="6-ЗНАЧНЫЙ КОД" ng-change="$ctrl.OnRoomCodeChanged()"></p>
+</form>
+<p class="login-message_log" ng-bind="$ctrl.logMsg"></p>
+<button class="btn login-btn" ng-disabled="$ctrl.btnDisabled" ng-click="$ctrl.OnLogin($ctrl.nickname, $ctrl.room, loginForm)">{{$ctrl.whantsToCreate ? "Создать" : "Войти"}}</button>
