@@ -11,10 +11,8 @@ angular.module('brewApp').component('login',{
                 }
                 this.OnRoomCodeChanged = function()
                 {
-                    console.log(this.room);
                     if(this.room.match('^[A-Z]{6}$'))
                     {
-                        console.log("match");
                         this.btnDisabled = false;
                         this.whantsToCreate = false;
                         this.logMsg = "";

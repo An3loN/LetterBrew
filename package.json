@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "author": "Vladislav Rorokin",
   "license": "ISC",

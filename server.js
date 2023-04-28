@@ -1,6 +1,5 @@
 const express = require('express');
 const ws = require('ws');
-const path = require('path');
 const app = express();
 const hostname = '127.0.0.1';
 const port = 8000;
@@ -11,7 +10,6 @@ class LobbyController {
   roomCodeLength = 6;
   constructor() {
       this.lobbies = new Map();
-      this.players = new Map();
   }
   generateRoomCode() {
     let result;

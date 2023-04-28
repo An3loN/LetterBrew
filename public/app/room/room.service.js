@@ -10,7 +10,6 @@ angular.module('brewApp').factory('roomService', ['roomSocket', function(roomSoc
     }
     roomSocket.onmessage(function(event){
         let data = JSON.parse(event.data);
-        console.log(data);
         switch(data.action)
         {
             case 'room_context':
